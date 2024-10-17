@@ -206,6 +206,21 @@
 //   { name: "Shoes", quantity: 4 },
 // ];
 
+// function combineProducts(products) {
+//   return products.reduce((acc, curvall) => {
+//     const found = acc.find((item) => item.name === curvall.name);
+//     if (found) {
+//       found.quantity += curvall.quantity;
+//     } else {
+//       acc.push({ name: curvall.name, quantity: curvall.quantity });
+//     }
+//     return acc;
+//   }, []);
+// }
+
+// const combinedProducts = combineProducts(products);
+// console.log(combinedProducts);
+
 //// 12-masala
 ///// 12 - MISOL.Mahsulotlarni toifalar bo 'yicha guruhlang.
 // const products = [
