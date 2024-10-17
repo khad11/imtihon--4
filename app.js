@@ -2,6 +2,32 @@
 // //Kirish: Mahsulotlar ro'yxatidagi obyektlarni tanlang va foydalanuvchi
 // //belgilagan tartib bo'yicha saralang (asc yoki desc ).
 
+// const products = [
+//   { name: "Laptop", price: 1000, sales: 150 },
+//   { name: "Phone", price: 500, sales: 300 },
+//   { name: "Watch", price: 200, sales: 100 },
+// ];
+
+// // Narxi bo'yicha o'suvchi
+
+// const sortProductsPriceAsc = products.sort((a, b) => a.price - b.price);
+// console.log("Narxi bo'yicha o'suvchi(Ascending):", sortProductsPriceAsc);
+
+// // Narxi bo'yicha kamayuvchi
+
+// const sortProductsPriceDesc = products.sort((a, b) => b.price - a.price);
+// console.log("Narxi bo'yicha kamayuvchi(Descendings):", sortProductsPriceDesc);
+
+// // Sotuv bo'yicha o'suvchi
+
+// const sortProductsSalesAsc = products.sort((a, b) => a.sales - b.sales);
+// console.log("Sotuv bo'yicha o'suvchi(Ascending):", sortProductsSalesAsc);
+
+// // Sotuv bo'yicha kamayuvchi
+
+// const sortProductsSalesDesc = products.sort((a, b) => b.sales - a.sales);
+// console.log("Sotuv bo'yicha kamayuvchi(Ascending):", sortProductsSalesDesc);
+
 //// 2-masala
 //// Vazifa: Talabalarning baholarini hisoblang va o'rtacha bahosi 70 dan past
 //// bo'lganlarni ro'yxatlang.
@@ -98,6 +124,8 @@
 //   { event: "Event B", date: new Date("2022-12-15") },
 //   { event: "Event C", date: new Date("2024-01-10") },
 // ];
+// const sanalar = dates.sort((a, b) => a.date - b.date);
+// console.log(sanalar);
 
 ////7-masala
 ////Vazifa: Berilgan mahsulotlarning o'rtacha narxini hisoblang.
@@ -136,11 +164,20 @@
 ////9-masala
 ////Vazifa: Berilgan mahsulotlar ro'yxatidagi barcha mahsulotlarni sotildi deb belgilang.
 
+// 9-MISOL. Berilgan mahsulotlar ro'yxatidagi barcha mahsulotlarni sotildi deb
+// belgilang.
+
 // const products = [
 //   { name: "Laptop", price: 1000, sold: false },
 //   { name: "Phone", price: 500, sold: false },
 //   { name: "Shoes", price: 100, sold: false },
 // ];
+// products.map(allSold);
+
+// function allSold(product) {
+//   product.sold = true;
+// }
+// console.log(products);
 
 ////10-masala
 ////Vazifa: Berilgan mahsulotlarning jami miqdorini hisoblang.
@@ -160,3 +197,23 @@
 // totalValue(products);
 
 ////11-masala
+////Vazifa: Bir xil nomdagi mahsulotlarni birlashtirib, ularning miqdorini jamlang.
+
+// const products = [
+//   { name: "Laptop", quantity: 2 },
+//   { name: "Phone", quantity: 3 },
+//   { name: "Laptop", quantity: 1 },
+//   { name: "Shoes", quantity: 4 },
+// ];
+
+//// 12-masala
+///// 12 - MISOL.Mahsulotlarni toifalar bo 'yicha guruhlang.
+// const products = [
+//   { name: "Laptop", category: "Electronics" },
+//   { name: "Phone", category: "Electronics" },
+//   { name: "Shoes", category: "Fashion" },
+// ];
+// const byName = products.map((nom) => nom.name);
+// const byCategory = products.map((sorted) => sorted.category);
+// console.log("Nomlari bo'yicha:", byName);
+// console.log("Kategoriyalari bo'yicha:", byCategory);
