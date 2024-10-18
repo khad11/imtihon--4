@@ -102,13 +102,11 @@
 // function groupBooksByAuthor(books) {
 //   return books.reduce((acc, book) => {
 //     const existingAuthor = acc.find((item) => item.author === book.author);
-
 //     if (existingAuthor) {
-//       existingAuthor.books.push(book.title);
+//         existingAuthor.books.push(book.title);
 //     } else {
 //       acc.push({ author: book.author, books: [book.title] });
 //     }
-
 //     return acc;
 //   }, []);
 // }
@@ -142,9 +140,7 @@
 
 //   return average;
 // }
-
-// const result = calculateAveragePrice(products);
-// console.log(result);
+// console.log(calculateAveragePrice(products));
 
 ////8-masala
 ////Vazifa: Kitoblarni chop etilgan yil bo'yicha tartiblang (ko'tarilish yoki tushish tartibida).
@@ -167,17 +163,18 @@
 // 9-MISOL. Berilgan mahsulotlar ro'yxatidagi barcha mahsulotlarni sotildi deb
 // belgilang.
 
-// const products = [
-//   { name: "Laptop", price: 1000, sold: false },
-//   { name: "Phone", price: 500, sold: false },
-//   { name: "Shoes", price: 100, sold: false },
-// ];
-// products.map(allSold);
-
-// function allSold(product) {
-//   product.sold = true;
-// }
-// console.log(products);
+const products = [
+  { name: "Laptop", price: 1000, sold: false },
+  { name: "Phone", price: 500, sold: false },
+  { name: "Shoes", price: 100, sold: false },
+];
+const result = products.map((product) => {
+  return {
+    ...product,
+    sold: product.sold || true,
+  };
+});
+console.log(result);
 
 ////10-masala
 ////Vazifa: Berilgan mahsulotlarning jami miqdorini hisoblang.
@@ -217,9 +214,7 @@
 //     return acc;
 //   }, []);
 // }
-
-// const combinedProducts = combineProducts(products);
-// console.log(combinedProducts);
+// console.log(combineProducts(products));
 
 //// 12-masala
 ///// 12 - MISOL.Mahsulotlarni toifalar bo 'yicha guruhlang.
