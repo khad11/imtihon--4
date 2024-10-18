@@ -163,18 +163,18 @@
 // 9-MISOL. Berilgan mahsulotlar ro'yxatidagi barcha mahsulotlarni sotildi deb
 // belgilang.
 
-const products = [
-  { name: "Laptop", price: 1000, sold: false },
-  { name: "Phone", price: 500, sold: false },
-  { name: "Shoes", price: 100, sold: false },
-];
-const result = products.map((product) => {
-  return {
-    ...product,
-    sold: product.sold || true,
-  };
-});
-console.log(result);
+// const products = [
+//   { name: "Laptop", price: 1000, sold: false },
+//   { name: "Phone", price: 500, sold: false },
+//   { name: "Shoes", price: 100, sold: false },
+// ];
+// const result = products.map((product) => {
+//   return {
+//     ...product,
+//     sold: product.sold || true,
+//   };
+// });
+// console.log(result);
 
 ////10-masala
 ////Vazifa: Berilgan mahsulotlarning jami miqdorini hisoblang.
